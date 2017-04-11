@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<title>PudhuEzuthu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/First.css">
+<link rel="stylesheet" href="CSS/Second.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.bookMy-sidenav a {padding:20px}
+</style>
+<body>
+
+<!-- Sidenav (hidden by default) -->
+<nav class="bookMy-sidenav bookMy-card-2 bookMy-top bookMy-xlarge bookMy-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidenav">
+  <a href="javascript:void(0)" onclick="bookMy_close()"
+  class="bookMy-closenav">Close Menu</a>
+  <a href="#food" onclick="bookMy_close()">Pudhu Ezuthu</a>
+  
+   <a href="ViewProfile.jsp" onclick="bookMy_close()">View Profile</a>
+
+  
+  <a href="AddCourierDetails.jsp" onclick="bookMy_close()">Add Courier Details</a>
+  <a href="ViewCourierDetails.jsp" onclick="bookMy_close()">View Courier Details</a>
+<a href="#about" onclick="bookMy_close()">About</a><a href="LogOutServlet" onclick="bookMy_close()">Log out</a>
+   <a href="#contact" class="bookMy-bar-item bookMy-button bookMy-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+</nav>
+
+<!-- Top menu -->
+<div class="bookMy-top">
+  <div class="bookMy-white bookMy-xlarge bookMy-padding-xlarge" style="max-width:1200px;margin:auto">
+    <div class="bookMy-left bookMy-opennav bookMy-hover-text-grey" onclick="bookMy_open()">☰</div>
+    <div class="bookMy-right">
+    </div>
+
+
+
+    <div class="bookMy-center">Pudhu Ezuthu </div>
+  </div>
+</div>
+  
+
+  
+<!--   critical section 2 start -->
+<div class="bookMy-content bookMy-container bookMy-padding-64" id="contact">
+  
+  <p class="bookMy-center"><em>We'd love to hear from you!</em></p>
+ 
+  <div class="bookMy-col m8 bookMy-container bookMy-section">
+      <div class="bookMy-large bookMy-margin-bottom">
+        <i class="fa fa-map-marker fa-fw bookMy-hover-text-black bookMy-xlarge bookMy-margin-right"></i>2/205 Anna Nagar,Kaveripattinam,Krishnagiri-635112<br>
+        <i class="fa fa-phone fa-fw bookMy-hover-text-black bookMy-xlarge bookMy-margin-right"></i> Phone: +91 9842647101<br>
+        <i class="fa fa-envelope fa-fw bookMy-hover-text-black bookMy-xlarge bookMy-margin-right"></i> Email: pudhuezuthu@gmail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="bookMy-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="bookMy-half">
+            <input class="bookMy-input bookMy-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="bookMy-half">
+            <input class="bookMy-input bookMy-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="bookMy-input bookMy-border" type="text" placeholder="Message" required name="Message">
+        <button class="bookMy-btn bookMy-black bookMy-right bookMy-padding bookMy-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  
+       </div>
+ 
+
+    
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidenav
+function bookMy_open() {
+    document.getElementById("mySidenav").style.display = "block";
+}
+ 
+function bookMy_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+
+</body>
+</html>

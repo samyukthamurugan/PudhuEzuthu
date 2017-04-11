@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements. See the NOTICE file distributed with this work for additional information regarding copyright ownership. The ASF licenses this file to You under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" metadata-complete="true" version="3.0">
+  <description> Servlet and JSP Examples. </description>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>spring</servlet-name>
+    <servlet-class>
+                org.springframework.web.servlet.DispatcherServlet
+            </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>spring</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SampleServlet</servlet-name>
+    <servlet-class>First</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SampleServlet</servlet-name>
+    <url-pattern>/Sample1Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MyPackage.ProfileServlet</servlet-name>
+    <servlet-class>MyPackage.ProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyPackage.ProfileServlet</servlet-name>
+    <url-pattern>/ProfileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MyPackage.LogInServlet</servlet-name>
+    <servlet-class>MyPackage.LogInServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyPackage.LogInServlet</servlet-name>
+    <url-pattern>/LogInServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MyPackage.CourierLogInServlet</servlet-name>
+    <servlet-class>MyPackage.CourierLogInServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyPackage.CourierLogInServlet</servlet-name>
+    <url-pattern>/CourierLogInServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>MyPackage.UserLogInServlet</servlet-name>
+    <servlet-class>MyPackage.UserLogInServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyPackage.UserLogInServlet</servlet-name>
+    <url-pattern>/UserLogInServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>MyPackage.LogOutServlet</servlet-name>
+    <servlet-class>MyPackage.LogOutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyPackage.LogOutServlet</servlet-name>
+    <url-pattern>/LogOutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MyPackage.ViewProfileServlet</servlet-name>
+    <servlet-class>MyPackage.ViewProfileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyPackage.ViewProfileServlet</servlet-name>
+    <url-pattern>/ViewProfileServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

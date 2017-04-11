@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="APP">
+<head>
+	<meta charset="UTF-8">
+	<title>angular-social example</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="First.css">
+<link rel="stylesheet" href="Second.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"/> -->
+</head>
+<body ng-controller="ExampleController">
+    <div ng-social-buttons
+             data-url="'http://www.tutorialspoint.com/'"
+             data-title="current_title"
+             data-description="'{{ current_description }}'"
+             data-image="'http://s3.mistinfo.com/32/d8/32d8eab76f4c242f665bda66b5edc6c5.jpg'">
+              
+              
+            
+          
+              <button class="ng-social-facebook" type="submit">
+          <i class="fa fa-facebook-official"></i> 
+        </button>
+        <button class="ng-social-facebook" type="submit">
+          <i class="fa fa-twitter"></i> 
+        </button>
+        <button class="ng-social-facebook" type="submit">
+          <i class="fa fa-google-plus-official"></i> 
+        </button>
+        <button class="ng-social-facebook" type="submit">
+          <i class="fa fa-linkedin"></i> 
+        </button>
+        <button class="ng-social-facebook" type="submit">
+          <i class="fa fa-instagram"></i> 
+        </button>
+            </div>
+  
+    
+      
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+	<script src="JS/social.js"></script>
+	<script>
+	angular.module("APP",["ngSocial"]).
+	controller("ExampleController",['$scope',function($scope){
+		 $scope.current_title = 'www.tutorialspoint.com/';
+         $scope.current_description = 'www.tutorialspoint.com/';
+	}])
+	</script>
+</body>
+</html>
